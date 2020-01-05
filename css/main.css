@@ -1,82 +1,116 @@
 /* 
     base styles
 */
+/* * {
+  border: solid 1px black;
+} */
+
 html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    border: 1px solid red;
-    width: 90%;
-    background-color: lightgray;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  background-color: lightgray;
 }
 
 p {
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 1.4rem;
-    margin-left: .8rem;
-    margin-right: .8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 .card-container h2 {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
+  /* border-bottom: 1px solid black; */
 }
 
 h1 {
-    text-align: center;
-    border-bottom: 1px solid black;
+  text-align: center;
+  border-bottom: 4px solid black;
 }
 
 /* 
     header styling
 */
+header h1 {
+  border: none;
+}
 
 header nav {
-    margin: auto;
+  margin: auto;
 }
 
-header nav a {
-    display: block;
-    text-align: center;
-    border: 1px solid black;
-    padding: .5rem;
-    margin-bottom: .5rem;
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+header a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  /* margin-bottom: 0.5rem; */
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  transition: 0.2s;
 }
 
+/* css when mouse hovers over */
+header a:hover:nth-child(even),
+footer a:hover:nth-child(even) {
+  background-color: cadetblue;
+  color: white;
+  transform: scale(1.03);
+}
+
+header a:hover:nth-child(odd),
+footer a:hover:nth-child(odd) {
+  background-color: #904646;
+  color: white;
+}
+
+/* css when user taps with phone */
+header a:active:nth-child(even),
+footer a:active:nth-child(even) {
+  background-color: cadetblue;
+  color: white;
+  transform: scale(1.03);
+}
+
+header a:active:nth-child(odd),
+footer a:active:nth-child(odd) {
+  background-color: #904646;
+  color: white;
+}
 /* 
     about me styling
 */
 .about-me-container {
-    border: 1px solid black;
-    /* text-align: center; */
-    margin-bottom: 2rem;
+  border-bottom: 1px solid black;
+  /* text-align: center; */
+  margin-bottom: 2rem;
 }
 
 .about-me-container img {
-    display: block;
-    margin: 1.75rem auto;
-    border: 1px solid black;
+  display: block;
+  margin: 1.75rem auto;
+  /* border: 1px solid black; */
 }
 
 /* 
@@ -84,45 +118,84 @@ header nav a {
 */
 
 .portfolio {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card-container {
-    height: 25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-    border: 1px solid black;
-    text-align: center;
+  height: 25rem;
+  max-width: 25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid black;
+  text-align: center;
 }
 
 .card-container img {
-    width: 100%;
-    height: 17em;
+  width: 100%;
+  height: 17em;
 }
 
 /* 
+    Skills styling
+*/
+.skills {
+  /* margin: auto; */
+}
+.skills ul {
+  padding: 0;
+  /* margin: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.skills li {
+  width: 50%;
+  /* padding: 0.5rem; */
+}
+
+.skills li:nth-child(even) {
+  background-color: cadetblue;
+}
+
+.skills li:nth-child(odd) {
+  background-color: #904646;
+}
+
+.skills p {
+  background-color: lightgray;
+  padding: 0.25rem;
+}
+/* 
     contact styling
 */
-
 
 /* 
     footer styling
 */
 
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+footer nav {
+  margin: auto 0;
+}
+footer nav a {
+  text-decoration: none;
+  color: black;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  transition: 0.3s;
 }
 
-footer a {
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    border: 1px solid black;
-    color: black;
-    padding: .5rem;
+@media screen and (min-width: 768px) {
+  * {
+    border: solid 1px black;
+  }
 }
