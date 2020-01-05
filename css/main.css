@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   margin: auto;
   width: 90%;
+  background-color: rgba(211, 211, 211, 0.356);
 }
 
 p {
@@ -109,6 +110,7 @@ header a {
 .about-me-container {
   border-bottom: 1px solid black;
   margin-bottom: 2rem;
+  /* background-color: rgba(133, 253, 237, 0.123); */
   /* margin-top: 15.5rem; */
 }
 
@@ -126,6 +128,7 @@ header a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  /* background-color: rgba(133, 253, 237, 0.123); */
 }
 
 .card-container {
@@ -252,6 +255,12 @@ footer nav,
   .card-container:hover {
     transform: scale(1.03);
   }
+
+  .skills {
+    margin: auto;
+    max-width: 75%;
+  }
+
   /******************* 
       Footer styling
   ********************/
@@ -278,4 +287,9 @@ footer nav,
   .card-container {
     width: 31%;
   }
+
+  /* .skills {
+    margin: auto;
+    max-width: 80%;
+  } */
 }
