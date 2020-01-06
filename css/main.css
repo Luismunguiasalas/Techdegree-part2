@@ -104,14 +104,13 @@ header a {
   letter-spacing: 1px;
   transition: 0.2s;
 }
+
 /******************* 
     about me styling
 *******************/
 .about-me-container {
   border-bottom: 1px solid black;
   margin-bottom: 2rem;
-  /* background-color: rgba(133, 253, 237, 0.123); */
-  /* margin-top: 15.5rem; */
 }
 
 .about-me-container img {
@@ -128,13 +127,10 @@ header a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* background-color: rgba(133, 253, 237, 0.123); */
 }
 
 .card-container {
   height: auto;
-  /* max-width: 40%;
-  min-width: 39%; */
   max-width: 75%;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -175,9 +171,7 @@ header a {
   background-color: lightgray;
   padding: 0.25rem;
 }
-/******************** 
-    contact styling
-********************/
+
 /******************** 
     footer styling
 ********************/
@@ -192,6 +186,7 @@ footer nav,
 .to-top {
   margin: auto 0.3rem;
 }
+
 .bottom-nav {
   width: 20rem;
   display: none;
@@ -206,10 +201,12 @@ footer nav,
   padding: 0.5rem;
   transition: 0.3s;
 }
+
 /********************
     Media Queries 
 ********************/
 @media screen and (min-width: 768px) {
+
   /******************* 
       Header Styling
   ********************/
@@ -223,6 +220,7 @@ footer nav,
     justify-content: space-evenly;
     width: 70%;
   }
+
   /******************* 
       About Styling
   ********************/
@@ -230,6 +228,7 @@ footer nav,
     display: flex;
     flex-direction: row-reverse;
   }
+
   .about-me-container img {
     width: 35%;
     margin: auto;
@@ -252,6 +251,7 @@ footer nav,
   .card-container {
     width: 45%;
   }
+
   .card-container:hover {
     transform: scale(1.03);
   }
@@ -267,6 +267,7 @@ footer nav,
   .bottom-nav {
     display: flex;
   }
+
   .to-top {
     display: none;
   }
@@ -287,9 +288,4 @@ footer nav,
   .card-container {
     width: 31%;
   }
-
-  /* .skills {
-    margin: auto;
-    max-width: 80%;
-  } */
 }

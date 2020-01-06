@@ -1,0 +1,26 @@
+// footer styling
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+footer nav,
+.to-top {
+    margin: auto 0.3rem;
+}
+
+.bottom-nav {
+    width: 20rem;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.bottom-nav a,
+.to-top {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem;
+    transition: 0.3s;
+}

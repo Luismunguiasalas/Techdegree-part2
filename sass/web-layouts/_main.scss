@@ -1,0 +1,60 @@
+// About me section
+.about-me-container {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+
+    & img {
+        display: block;
+        margin: 1.75rem auto;
+        /* border: 1px solid black; */
+    }
+}
+
+// portfolio section
+.portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    height: auto;
+    max-width: 75%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black;
+    text-align: center;
+    transition: 0.3s;
+
+    & img {
+        width: 100%;
+        height: 17em;
+    }
+}
+
+// Skills section
+
+.skills ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+
+    & li {
+        width: 50%;
+    }
+
+    & li:nth-child(even) {
+        background-color: cadetblue;
+    }
+
+    & li:nth-child(odd) {
+        background-color: #904646;
+    }
+
+    & p {
+        background-color: lightgray;
+        padding: 0.25rem;
+    }
+}

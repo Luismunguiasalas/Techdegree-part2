@@ -1,0 +1,76 @@
+/****************** 
+    base styles
+*******************/
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    background-color: rgba(211, 211, 211, 0.356);
+
+    p {
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.4rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .card-container h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        border-bottom: 4px solid black;
+    }
+}
+
+// Pseudo Code // 
+//when mouse hovers over 
+header a:hover:nth-child(even),
+.bottom-nav a:hover:nth-child(odd),
+.to-top:hover {
+    background-color: cadetblue;
+    color: white;
+    transform: scale(1.03);
+}
+
+header a:hover:nth-child(odd),
+.bottom-nav a:hover:nth-child(even) {
+    background-color: #904646;
+    color: white;
+    transform: scale(1.03);
+}
+
+//when user taps with phone 
+header a:active:nth-child(even),
+.bottom-nav a:active:nth-child(odd),
+.to-top:active {
+    background-color: cadetblue;
+    color: white;
+    transform: scale(1.03);
+}
+
+header a:active:nth-child(odd),
+.bottom-nav a:active:nth-child(even) {
+    background-color: #904646;
+    color: white;
+    transform: scale(1.03);
+}

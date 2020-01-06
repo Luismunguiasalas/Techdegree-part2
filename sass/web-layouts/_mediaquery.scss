@@ -1,0 +1,81 @@
+/********************
+    Media Queries 
+********************/
+@media screen and (min-width: 768px) {
+
+    //Header section Styling
+    header {
+        display: flex;
+        flex-direction: column;
+
+        & nav {
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 70%;
+        }
+    }
+
+    // About section Styling
+    .about-me-container {
+        display: flex;
+        flex-direction: row-reverse;
+
+        & img {
+            width: 35%;
+            margin: auto;
+        }
+    }
+
+    .about-me {
+        width: 60%;
+        margin: auto;
+
+        & p {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: left;
+        }
+    }
+
+    // Portfolio Styling
+    .card-container {
+        width: 45%;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    .skills {
+        margin: auto;
+        max-width: 75%;
+    }
+
+    // Footer styling
+    .bottom-nav {
+        display: flex;
+    }
+
+    .to-top {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    // Header section styling
+    header {
+        justify-content: space-between;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+
+        & nav {
+            margin: auto 0;
+            width: 40%;
+        }
+    }
+
+    .card-container {
+        width: 31%;
+    }
+}
