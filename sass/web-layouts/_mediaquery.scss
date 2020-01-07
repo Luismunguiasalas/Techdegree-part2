@@ -1,6 +1,33 @@
 /********************
     Media Queries 
 ********************/
+@media screen and (max-width: 568px) {
+    .card-container {
+        max-width: 95%;
+    }
+
+    .skills {
+        p {
+            font-size: .8rem;
+        }
+    }
+
+    body h1 {
+        font-weight: 10;
+        border-bottom: 2px solid black;
+        // font-weight: 100;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+}
+
+
 @media screen and (min-width: 768px) {
 
     //Header section Styling
@@ -21,7 +48,7 @@
         flex-direction: row-reverse;
 
         & img {
-            width: 35%;
+            width: 45%;
             margin: auto;
         }
     }
