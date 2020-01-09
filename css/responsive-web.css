@@ -43,7 +43,7 @@ body .card-container h2 {
 }
 
 /* line 39, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_base.scss */
-body h1 {
+body h2 {
   text-align: center;
   border-bottom: 4px solid black;
 }
@@ -85,16 +85,17 @@ header a:active:nth-child(odd),
 /* line 3, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_header.scss */
 header h1 {
   border: none;
+  text-align: center;
 }
 
-/* line 7, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_header.scss */
+/* line 8, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_header.scss */
 header nav {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-/* line 13, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_header.scss */
+/* line 14, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_header.scss */
 header a {
   text-align: center;
   text-decoration: none;
@@ -120,14 +121,14 @@ header a {
   /* border: 1px solid black; */
 }
 
-/* line 16, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 20, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .portfolio {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-/* line 22, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 26, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .card-container {
   height: auto;
   max-width: 75%;
@@ -138,13 +139,13 @@ header a {
   transition: 0.3s;
 }
 
-/* line 31, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 35, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .card-container img {
   width: 100%;
   height: auto;
 }
 
-/* line 39, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 43, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .skills ul {
   padding: 0;
   display: flex;
@@ -153,22 +154,22 @@ header a {
   justify-content: space-evenly;
 }
 
-/* line 46, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 50, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .skills ul li {
   width: 50%;
 }
 
-/* line 50, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 54, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .skills ul li:nth-child(even) {
   background-color: cadetblue;
 }
 
-/* line 54, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 58, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .skills ul li:nth-child(odd) {
   background-color: #904646;
 }
 
-/* line 58, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
+/* line 62, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_main.scss */
 .skills ul p {
   background-color: lightgray;
   padding: 0.25rem;
@@ -218,8 +219,8 @@ footer nav,
   }
   /* line 15, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   body h1 {
-    font-weight: 10;
-    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: 100;
   }
   /* line 21, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   h2 {
@@ -232,74 +233,79 @@ footer nav,
 }
 
 @media screen and (min-width: 768px) {
-  /* line 34, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 37, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   header {
     display: flex;
     flex-direction: column;
   }
-  /* line 38, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 41, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   header nav {
     flex-direction: row;
     justify-content: space-evenly;
     width: 70%;
   }
-  /* line 46, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 49, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .about-me-container {
     display: flex;
     flex-direction: row-reverse;
   }
-  /* line 50, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 53, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .about-me-container img {
     width: 45%;
     margin: auto;
   }
-  /* line 56, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 58, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  .about-me-container h2 {
+    margin: auto auto 0 .9rem;
+    display: inline-block;
+    text-align: left;
+    border-bottom: none;
+  }
+  /* line 66, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .about-me {
     width: 60%;
     margin: auto;
   }
-  /* line 60, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 70, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .about-me p {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     text-align: left;
   }
-  /* line 68, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 78, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .card-container {
     width: 45%;
   }
-  /* line 71, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 81, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .card-container:hover {
     transform: scale(1.03);
   }
-  /* line 76, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 86, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .skills {
     margin: auto;
     max-width: 75%;
   }
-  /* line 82, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 92, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .bottom-nav {
     display: flex;
   }
-  /* line 86, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 96, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .to-top {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 94, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 104, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   header {
     justify-content: space-between;
     flex-direction: row;
     border-bottom: 1px solid black;
   }
-  /* line 99, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 109, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   header nav {
     margin: auto 0;
     width: 40%;
   }
-  /* line 105, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
+  /* line 115, ../../../../../Users/luismunguiasalas/Documents/Programming/Git Projects/Techdegree-part2/sass/web-layouts/_mediaquery.scss */
   .card-container {
     width: 31%;
   }

@@ -13,9 +13,9 @@
     }
 
     body h1 {
-        font-weight: 10;
-        border-bottom: 2px solid black;
-        // font-weight: 100;
+        font-size: 1.5rem;
+        font-weight: 100;
+        // border-bottom: 2px solid black;
     }
 
     h2 {
@@ -29,6 +29,9 @@
 
 
 @media screen and (min-width: 768px) {
+    // * {
+    //     border: solid 1px black;
+    // }
 
     //Header section Styling
     header {
@@ -51,6 +54,13 @@
             width: 45%;
             margin: auto;
         }
+
+        h2 {
+            margin: auto auto 0 .9rem;
+            display: inline-block;
+            text-align: left;
+            border-bottom: none;
+        }
     }
 
     .about-me {
@@ -58,8 +68,8 @@
         margin: auto;
 
         & p {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            // padding-top: 5rem;
+            // padding-bottom: 5rem;
             text-align: left;
         }
     }

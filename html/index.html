@@ -1,175 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/responsive-web.css" />
+    <title>Mobile-first Responsive webpage</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/responsive-web.css" />
-  <title>Mobile-first Responsive webpage</title>
-</head>
+  <body id="top">
+    <header>
+      <!--header start-->
+      <h1>Luis Munguia Salas</h1>
+      <nav>
+        <!--nav start-->
+        <a href="index.html">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!--nav end-->
+    </header>
+    <!--header end-->
+    <div class="about-me-container">
+      <!-- about me container start -->
+      <img
+        src="../images/responsive-layout-profile.png"
+        alt="Profile picture of Luis"
+      />
 
-<body id="top">
-  <header>
-    <!--header start-->
-    <h1>Luis Munguia Salas</h1>
-    <nav>
-      <!--nav start-->
-      <a href="index.html">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <!--nav end-->
-  </header>
-  <!--header end-->
-  <label id="top"></label>
-  <div class="about-me-container">
-    <!-- about me container start -->
-    <img src="../images/responsive-layout-profile.png" alt="Profile picture of Luis" />
+      <!-- about me start -->
+      <!-- <h2>About Me</h2> -->
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm a front-end developer who loves responsive design and css. I
+          recently finished a degree in front-end-web-developement at TreeHouse
+          and am exited to put all my skills to use!
+        </p>
+      </section>
+      <!-- about me end -->
+    </div>
+    <!-- about me container end -->
 
-    <!-- about me start -->
-    <section class="about-me">
-      <p>
-        Hi! I'm a front-end developer who loves responsive design and css. I
-        recently finished a degree in front-end-web-developement at TreeHouse
-        and am exited to put all my skills to use!
-      </p>
-    </section>
-    <!-- about me end -->
-  </div>
-  <!-- about me container end -->
-
-  <label id="portfolio">
+    <!-- <label id="portfolio">
     <h1>Portfolio</h1>
-  </label>
-  <section class="portfolio">
-    <!-- portfolio section start -->
+  </label> -->
+    <h2 id="portfolio">Portfolio</h2>
+    <section class="portfolio">
+      <!-- portfolio section start -->
 
-    <div class="card-container">
-      <!-- Marketing Page -->
-      <img src="../images/portfolio-1.png" alt="Marketing Webpage" />
-      <h2>Marketing Page</h2>
-      <p>
-        This project shows the front page of a marketing website meant for a
-        specific business I'm interested in.
-      </p>
-    </div>
+      <div class="card-container">
+        <!-- Marketing Page -->
+        <img src="../images/portfolio-1.png" alt="Marketing Webpage" />
+        <h3>Marketing Page</h3>
+        <p>
+          This project shows the front page of a marketing website meant for a
+          specific business I'm interested in.
+        </p>
+      </div>
 
-    <div class="card-container">
-      <!-- Search Page -->
-      <img src="../images/portfolio-2.png" alt="Marketing Webpage" />
-      <h2>Search Page</h2>
-      <p>
-        This Project Searches through a specific database to find information
-        that the user is tring to look up.
-      </p>
-    </div>
+      <div class="card-container">
+        <!-- Search Page -->
+        <img src="../images/portfolio-2.png" alt="Marketing Webpage" />
+        <h3>Search Page</h3>
+        <p>
+          This Project Searches through a specific database to find information
+          that the user is tring to look up.
+        </p>
+      </div>
 
-    <div class="card-container">
-      <!-- Travel App -->
-      <img src="../images/portfolio-3.png" alt="Marketing Webpage" />
-      <h2>Travel App</h2>
-      <p>
-        This project compares travel times based on different transportation
-        methods and tells you the best one.
-      </p>
-    </div>
+      <div class="card-container">
+        <!-- Travel App -->
+        <img src="../images/portfolio-3.png" alt="Marketing Webpage" />
+        <h3>Travel App</h3>
+        <p>
+          This project compares travel times based on different transportation
+          methods and tells you the best one.
+        </p>
+      </div>
 
-    <div class="card-container">
-      <!-- Map of favorite spots-->
-      <img src="../images/portfolio-4.png" alt="Marketing Webpage" />
-      <h2>Map of Favorite Spots</h2>
-      <p>
-        This project uses mapping apis to plot points for my favorite sports
-        in the city for a do it yourself walking tour.
-      </p>
-    </div>
+      <div class="card-container">
+        <!-- Map of favorite spots-->
+        <img src="../images/portfolio-4.png" alt="Marketing Webpage" />
+        <h3>Map of Favorite Spots</h3>
+        <p>
+          This project uses mapping apis to plot points for my favorite sports
+          in the city for a do it yourself walking tour.
+        </p>
+      </div>
 
-    <div class="card-container">
-      <!-- Photo Gallery-->
-      <img src="../images/portfolio-5.png" alt="Marketing Webpage" />
-      <h2>Photo Gallery</h2>
-      <p>
-        This project shows pictes from a recent trip to the viewer and allows
-        them to easily navigate through photos.
-      </p>
-    </div>
+      <div class="card-container">
+        <!-- Photo Gallery-->
+        <img src="../images/portfolio-5.png" alt="Marketing Webpage" />
+        <h3>Photo Gallery</h3>
+        <p>
+          This project shows pictes from a recent trip to the viewer and allows
+          them to easily navigate through photos.
+        </p>
+      </div>
 
-    <div class="card-container">
-      <!-- Calculator-->
-      <img src="../images/portfolio-6.png" alt="Marketing Webpage" />
-      <h2>Calculator</h2>
-      <p>
-        Enter the numbers you want and press the big blue button to get the
-        result.
-      </p>
-    </div>
-  </section>
-  <!-- portfolio section end -->
+      <div class="card-container">
+        <!-- Calculator-->
+        <img src="../images/portfolio-6.png" alt="Marketing Webpage" />
+        <h3>Calculator</h3>
+        <p>
+          Enter the numbers you want and press the big blue button to get the
+          result.
+        </p>
+      </div>
+    </section>
+    <!-- portfolio section end -->
 
-  <label id="skills">
+    <!-- <label id="skills">
     <h1>Skills</h1>
-  </label>
-  <section class="skills">
-    <!-- skills section start -->
-    <ul>
-      <li>
-        <p>HTML5</p>
-      </li>
-      <li>
-        <p>CSS3 & Sass</p>
-      </li>
-      <li>
-        <p>JavaScript & JQuery</p>
-      </li>
-      <li>
-        <p>React & Redux</p>
-      </li>
-      <li>
-        <p>NodeJs</p>
-      </li>
-      <li>
-        <p>Java & Python</p>
-      </li>
-      <li>
-        <p>Ruby & Rails</p>
-      </li>
-      <li>
-        <p>Agile Methodoligies</p>
-      </li>
-    </ul>
-  </section>
-  <!-- skills sections end -->
+  </label> -->
+    <!-- <h1 id="skills">Skills</h1> -->
+    <section class="skills">
+      <h2 id="skills">Skills</h2>
+      <!-- skills section start -->
+      <ul>
+        <li>
+          <p>HTML5</p>
+        </li>
+        <li>
+          <p>CSS3 & Sass</p>
+        </li>
+        <li>
+          <p>JavaScript & JQuery</p>
+        </li>
+        <li>
+          <p>React & Redux</p>
+        </li>
+        <li>
+          <p>NodeJs</p>
+        </li>
+        <li>
+          <p>Java & Python</p>
+        </li>
+        <li>
+          <p>Ruby & Rails</p>
+        </li>
+        <li>
+          <p>Agile Methodoligies</p>
+        </li>
+      </ul>
+    </section>
+    <!-- skills sections end -->
 
-  <label id="contact">
-    <h1>Contact</h1>
-  </label>
-  <section class="contact">
-    <!-- contact section start -->
-    <p>
-      If you're interested in chatting or want more information about what
-      I've been working on, I'd love to hear from you!
-      <br />
-      <br />
-      <b>Phone:</b> 1(111) 555 -1111
-      <br />
-      <b>Email:</b> email@yoursite.com
-    </p>
-    <!-- contact section end -->
-  </section>
+    <!-- <label id="contact">
+      <h1>Contact</h1>
+    </label> -->
+    <!-- <h1 id="contact">Contact</h1> -->
+    <section class="contact">
+      <h2 id="contact">Contact</h2>
+      <!-- contact section start -->
+      <p>
+        If you're interested in chatting or want more information about what
+        I've been working on, I'd love to hear from you!
+        <br />
+        <br />
+        <b>Phone:</b> 1(111) 555 -1111
+        <br />
+        <b>Email:</b> email@yoursite.com
+      </p>
+      <!-- contact section end -->
+    </section>
 
-  <footer>
-    <!-- footer section start -->
-    <p>&COPY;Luis Munguia Salas</p>
-    <nav class="bottom-nav">
-      <a href="#top">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="to-top" href="#top">Back to Top</a>
-  </footer>
-  <!-- footer section end -->
-</body>
-
+    <footer>
+      <!-- footer section start -->
+      <p>&COPY;Luis Munguia Salas</p>
+      <nav class="bottom-nav">
+        <a href="#top">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="to-top" href="#top">Back to Top</a>
+    </footer>
+    <!-- footer section end -->
+  </body>
 </html>
